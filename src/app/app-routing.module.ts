@@ -15,6 +15,7 @@ const routes: Routes = [
     path: 'dashboard',
     loadChildren: './dashboard/dashboard.module#DashboardPageModule',
     canActivate: [AuthGuardService]
+    // Here canActivate is a method inside the AuthGuardService which return boolen type values
   }
 ];
 

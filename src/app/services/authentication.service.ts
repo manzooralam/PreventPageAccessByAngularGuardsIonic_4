@@ -22,6 +22,7 @@ export class AuthenticationService {
     });
   }
  
+  
   ifLoggedIn() {
     this.storage.get('USER_INFO').then((response) => {
       if (response) {
